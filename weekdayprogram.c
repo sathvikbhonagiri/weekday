@@ -18,33 +18,33 @@ void main()
         {oddday=oddday+5;
         yy=yy-100;} 
        }
-       leapyear=yy/4;
-       oddday=oddday+(leapyear*2)+(yy-leapyear)+dd;
-       if(mm==1) 
-        oddday=oddday;
-        else if(mm==2)
-             oddday=oddday+31;
-             else if(mm==3)
-                  oddday=oddday+31+28;
-                  else if(mm==4)
-                      oddday=oddday+31+28+31;
-                      else if(mm==5)
-                           oddday=oddday+31+28+31+30;
-                           else if(mm==6)
-                               oddday=oddday+31+28+31+30+31;
-                               else if(mm==7)
-                                    oddday=oddday+31+28+31+30+31+30;
-                                    else if(mm==8)
-                                          oddday=oddday+31+28+31+30+31+30+31;
-                                          else if(mm==9)
-                                             oddday=oddday+31+28+31+30+31+30+31+31;
-                                             else if(mm==10)
-                                             oddday=oddday+31+28+31+30+31+30+31+31+30;
-                                                   else if(mm==11)
-                                                      oddday=oddday+31+28+31+30+31+30+31+31+30+31;
-                                                      else if(mm==12)
-                                                        oddday=oddday+31+28+31+30+31+30+31+31+30+31+30;
-
+leapyear=yy/4;
+  oddday=oddday+(leapyear*2)+(yy-leapyear)+dd;
+  if(mm==1) 
+     oddday=oddday;
+   else if(mm==2)
+        oddday=oddday+31;
+   else if(mm==3)
+         oddday=oddday+31+28;
+   else if(mm==4)
+        oddday=oddday+31+28+31;
+   else if(mm==5)
+        oddday=oddday+31+28+31+30;
+    else if(mm==6)
+         oddday=oddday+31+28+31+30+31;
+     else if(mm==7)
+          oddday=oddday+31+28+31+30+31+30;
+      else if(mm==8)
+       oddday=oddday+31+28+31+30+31+30+31;
+       else if(mm==9)
+        oddday=oddday+31+28+31+30+31+30+31+31;
+       else if(mm==10)
+        oddday=oddday+31+28+31+30+31+30+31+31+30;
+        else if(mm==11)
+      oddday=oddday+31+28+31+30+31+30+31+31+30+31;
+         else if(mm==12)
+        oddday=oddday+31+28+31+30+31+30+31+31+30+31+30;
+       
        oddday=oddday%7;
         switch(oddday)
         {  case 0:
@@ -68,5 +68,5 @@ void main()
              case 6:
              printf("saturday");
              break;}
-             }
+             }     
 }
